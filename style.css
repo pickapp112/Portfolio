@@ -1,0 +1,131 @@
+body {
+	background: rgb(186, 173, 230);
+    overflow-y: scroll;
+    /* animation: fadebackground 20s infinite; */
+    /* transition: background-color 2s cubic-bezier(1, 1, 1, 1);
+	transition-delay: 0s; */
+	}
+body::-webkit-scrollbar {
+    display: none;
+}
+/* @keyframes fadebackground {
+  from {background-color: rgb(186, 173, 230);}
+  to {background-color: lightblue;}
+} */
+h1, h2, h3, h4, h5, h6, p {
+	color: black;
+      font-family: "myFirstFont";
+	}
+	
+.article-intro {
+    padding-top: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    text-align: center;
+}
+
+.navbar{
+    height: 50px;
+    padding: 20px;
+}
+.menu{
+    margin-left: 40px;
+}
+a:hover, a:visited, a:link, a:active
+{
+    color: black;
+    text-decoration: none;
+}
+section{
+    height: 100vh;
+}
+
+section:nth-child(2) {
+  background: lightgreen;
+}
+section:nth-child(3) {
+  background: pink;
+}
+section:nth-child(4) {
+  background: lightblue;
+}
+section:nth-child(5) {
+  background: lightcoral;
+}
+
+#section1{
+    display: flex;
+    align-items: center;
+}
+#section2{
+    display: flex;
+    align-items: center;
+}
+#section22{
+    display: flex;
+    justify-content: center;
+}
+#section3{
+    height: 200vh;
+}
+#section4{
+    display: flex;
+    align-items: center;
+}
+#outro{
+    display: flex;
+    justify-content: space-between;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+}
+/* .navres{
+  display: flex;
+  justify-content: flex-end;
+} */
+@font-face {
+  font-family: "myFirstFont";
+  src: url(FC\ Minimal\ Regular.ttf) format("truetype");
+}
+@media screen and (max-width: 575px) {
+  #section3{
+    height: 250vh;
+    padding-top: 100px;
+  }
+  .article-intro{
+      padding-top: 0px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 576px) {
+  #section3{
+    height: 120vh;
+    padding-top: 100px;
+  }
+  .article-intro{
+      padding-top: 0px;
+  }
+}
+.lineUp {
+  animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
