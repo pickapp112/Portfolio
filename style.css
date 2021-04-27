@@ -193,9 +193,12 @@ section:nth-child(5) {
   position: relative;
   color: white;
   /* top: 60%; */
-  right: 20%;
+  /* right: 20%; */
   font-family: "myFirstFont";
-  text-align: end;
+  text-align: center;
+}
+.imgprofile{
+  margin-bottom: 40px;
 }
 .social2{
   position: absolute;
