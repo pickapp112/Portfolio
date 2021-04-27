@@ -14,10 +14,17 @@ body::-webkit-scrollbar {
   to {background-color: lightblue;}
 } */
 h1, h2, h3, h4, h5, h6, p {
-	color: black;
+	/* color: black; */
       font-family: "myFirstFont";
 	}
-	
+	.imgshow{
+     transition: transform .2s;
+  }
+  .imgshow:hover{
+     -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.3) rotate(5deg); 
+  }
 .article-intro {
     padding-top: 200px;
     margin-bottom: 50px;
@@ -50,12 +57,19 @@ ul {
   list-style-type: none;
 }
 .social{
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
 }
 .social li{
   padding: 50px;
+}
+.textend{
+  /* display: flex; */
+  height: 70%;
+   text-align:center;
+     position: relative;
+     top: 200px;
 }
 .btn{
    will-change: transform;
@@ -103,17 +117,9 @@ section:nth-child(5) {
     height: 200vh;
 }
 #section4{
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
+    /* display: flex; */
+    /* text-align: center; */
 }
-.textend{
-  z-index: -1;
-  position: absolute;
-  left: 200px;
-  top:1600px;
-}
-
 @font-face {
   font-family: "myFirstFont";
   src: url(FC\ Minimal\ Regular.ttf) format("truetype");
@@ -126,6 +132,9 @@ section:nth-child(5) {
   .article-intro{
       padding-top: 0px;
   }
+  .imgshow{
+  display: none;
+}
 }
 @media screen and (max-width: 991px) and (min-width: 576px) {
   #section3{
@@ -135,6 +144,9 @@ section:nth-child(5) {
   .article-intro{
       padding-top: 0px;
   }
+  .imgshow{
+  display: none;
+}
 }
 
 .hidden {
@@ -160,4 +172,25 @@ section:nth-child(5) {
   position:relative;
   top:-0.14em;
   left:10px;
+}
+
+#about{
+  background-color: black;
+}
+#textintro{
+  position: relative;
+  color: white;
+  /* top: 60%; */
+  right: 10%;
+  font-family: "myFirstFont";
+  text-align: end;
+}
+.social2{
+  position: relative;
+  top:50%;
+  left: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 50px;
+  height: 50%; */
 }
