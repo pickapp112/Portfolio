@@ -148,7 +148,19 @@ section:nth-child(5) {
   display: none;
 }
 }
-
+@media screen and (max-width: 910px){
+  .imgprofile{
+    display: none;
+  }
+  #textintro{
+    width: 400px;
+    top: 200px;
+    right: 0%;
+  }
+  .social2{
+    margin-top: 200px;
+  }
+}
 .hidden {
   opacity:0;
 }
@@ -181,13 +193,13 @@ section:nth-child(5) {
   position: relative;
   color: white;
   /* top: 60%; */
-  right: 10%;
+  right: 20%;
   font-family: "myFirstFont";
   text-align: end;
 }
 .social2{
-  position: relative;
-  top:50%;
+  position: absolute;
+  top:30%;
   left: 25%;
   display: flex;
   flex-wrap: wrap;
