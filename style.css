@@ -126,7 +126,7 @@ section:nth-child(5) {
 }
 @media screen and (max-width: 575px) {
   #section3{
-    height: 250vh;
+    height: 350vh;
     padding-top: 100px;
   }
   .article-intro{
@@ -138,7 +138,7 @@ section:nth-child(5) {
 }
 @media screen and (max-width: 991px) and (min-width: 576px) {
   #section3{
-    height: 120vh;
+    height: 200h;
     padding-top: 100px;
   }
   .article-intro{
